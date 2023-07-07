@@ -86,22 +86,6 @@ body {  /* 设置body的上下左右外边距均为0 */
 }
 /* ------------------------整体表样式 ↑------------------------*/
 
-/* ------------------------轮动播放图片样式 ↓------------------------*/
-.imgBox img{
-    border-style:solid;
-    border-width: 0px 0px 1px 0px;
-    border-color: rgb(225, 224, 224);
-    width: 100%;
-    height: 295px;
-}
-.img1{   /* 设置一开始只显示此图片 */
-    display: block;
-}
-.img2{  /* 设置一开始不显示此图片 */
-    display: none;
-}
-/* ------------------------轮动播放图片样式 ↑------------------------*/
-
 
 /* ------------------------固定背景图片表格样式 ↓------------------------*/
 
@@ -144,10 +128,7 @@ body {  /* 设置body的上下左右外边距均为0 */
   width: 900px;
   text-align: left;
 }
-.tubiaoyangshi1{
-  width: 25px;
-  height: 40px;
-}
+
 .neirongweizhi1{
   margin-left: 30px;  /* 设置外边距上方 */
   padding: 0px;
@@ -201,6 +182,13 @@ body {  /* 设置body的上下左右外边距均为0 */
 }
 /* ------------------------固定背景图片表格样式 ↑------------------------*/
 
+/* ------------------------背景颜色设置 ↓------------------------ */
+.beijing1{
+  background-color: rgb(220, 235, 255);
+}
+/* ------------------------背景颜色设置 ↑------------------------ */
+
+
 /* ------------------------对齐方式设置 ↓------------------------ */
 .dibuduiqi{   /* 设置底部对齐 */
   
@@ -236,7 +224,7 @@ body {  /* 设置body的上下左右外边距均为0 */
   text-decoration: none;     /*  设置字体无下划线；text-decoration:underline 设置字体有下划线 */
   }
 
-  /* 标题字体2 */
+ /* 标题字体2 */
 .ziti2 {
   /* 设置字体样式;line-height 为设置行间距 */
   font-family: "微软雅黑";	
@@ -245,7 +233,7 @@ body {  /* 设置body的上下左右外边距均为0 */
   color: #000000; 
   line-height: 10px;}
 
-  /* 正文字体1 */
+ /* 正文字体1 */
 .ziti3 {
   color: #000000;
   font-family: "微软雅黑";
@@ -253,73 +241,72 @@ body {  /* 设置body的上下左右外边距均为0 */
   line-height:24px;
   text-decoration: none;     /*  设置字体无下划线；text-decoration:underline 设置字体有下划线 */
 }
+.ziti4 {                     /*  设置导航链接字体 */
+  color: #000000;
+  font-family: "微软雅黑";
+  font-size: 16px;
+  line-height:32px;
+  text-decoration: none;     /*  设置字体无下划线；text-decoration:underline 设置字体有下划线 */
+
+}
+
 /* ------------------------字体设置 ↑------------------------ */
 
 
+/* ------------------------样式表 ↓------------------------*/
 
+a{text-decoration : none}   /* 设置全页面超链接去掉下划线 */
 
-/* ------------------------方块动画设置 ↓------------------------ */
-.donghua1 {
-  width: 5px;
-  height: 5px;
-  background-color: red;
-  position: relative;
-  animation-name: example1;
-  animation-duration: 4s;  /* 设置动画每次播放的时长 */
-  animation-delay: 0s;  /* 设置动画延时播放的时间 */
-  animation-iteration-count: infinite;  /* 设置动画播放次数；1就是1次；2就是2次；infinite就是一直播放 */
+.divyangshi101{  /* 设置div的样式：链接地址的样式 */
+  border-style: none;  /* 设置盒子样式 */
+  border:"0px";
+  padding:0px;  /* 设置内边距 */
+  margin:0px;  /* 设置外边距 */
+  text-align:left;  /* 设置水平居中 */
+  /*   display:inline-block;   */
+  /*   vertical-align:middle;  设置垂直居中 */
 }
-.donghua2 {
-  width: 5px;
-  height: 5px;
-  background-color: red;
-  position: relative;
-  animation-name: example2;
-  animation-duration: 4s;  /* 设置动画每次播放的时长 */
-  animation-delay: 0s;  /* 设置动画延时播放的时间 */
-  animation-iteration-count: infinite;  /* 设置动画播放次数；1就是1次；2就是2次；infinite就是一直播放 */
+.divyangshi201{
+  border-style: double;
+  border-width: 1px;
+  border-color: rgb(232, 223, 212);
+  text-align: left;
 }
-.donghua3 {
-  width: 5px;
-  height: 5px;
-  background-color: red;
-  position: relative;
-  animation-name: example3;
-  animation-duration: 4s;  /* 设置动画每次播放的时长 */
-  animation-delay: 0s;  /* 设置动画延时播放的时间 */
-  animation-iteration-count: infinite;  /* 设置动画播放次数；1就是1次；2就是2次；infinite就是一直播放 */
+.divyangshi301{
+  border-style: none;  /* 设置盒子样式 */
+  border:"0px";
+  padding:0px;  /* 设置内边距 */
+  margin:0px;  /* 设置外边距 */
+  text-align:center;  /* 设置水平居中 */
+  font-weight: bold;  /* 字体加粗 */
 }
-@keyframes example1 {
-  0%   {background-color:red; left:0px; top:0px;}
-  50%  {background-color:red; left:1215px; top:0px;}
-  100% {background-color:red; left:0px; top:0px;}
-}
-@keyframes example2 {
-  0%   {background-color:red; left:3px; top:0px;}
-  50%  {background-color:red; left:1217px; top:0px;}
-  100% {background-color:red; left:3px; top:0px;}
-}
-@keyframes example3 {
-  0%   {background-color:red; left:5px; top:0px;}
-  50%  {background-color:red; left:1220px; top:0px;}
-  100% {background-color:red; left:5px; top:0px;}
-}
-/* ------------------------方块动画设置 ↑------------------------ */
 
+.kuandu230{
+  width: 230px;
+}
+.kuandu987{
+  width: 987px;
+}
+.tubiaoyangshi1{
+  width: 20px;
+  height: 20px;
+}
+
+.hlong *{display:inline-block;vertical-align:middle}
+/* ------------------------样式表 ↑------------------------*/
 
 
 /* ------------------------底部样式设置 ↓------------------------ */
 .dibu{    
-    margin: 0;  /* 设置外边距 */
-    padding: 0;  /* 设置内边距 */
-    width:100%;   /* 设置宽度 */ 
-    height:60px;    /* 设置高度 */ 
-    background:#0C013F;   /* 设置背景颜色 */ 
-    z-index:9998; /* 内容中有相对定位元素时，如图片等，固定的导航栏会被遮挡，需要设置z-index值，将导航栏放置最前面 */
-    text-align: center;
-    font-family: "微软雅黑";  /* 设置字体 */
-    font-size: 8px;  /* 设置体字大小 */
-    color:#FFFFFF;  /*设置字体颜色*/
-  }
-  /* ------------------------底部样式设置 ↑------------------------ */
-  
+  margin: 0;  /* 设置外边距 */
+  padding: 0;  /* 设置内边距 */
+  width:100%;   /* 设置宽度 */ 
+  height:60px;    /* 设置高度 */ 
+  background:#0C013F;   /* 设置背景颜色 */ 
+  z-index:9998; /* 内容中有相对定位元素时，如图片等，固定的导航栏会被遮挡，需要设置z-index值，将导航栏放置最前面 */
+  text-align: center;
+  font-family: "微软雅黑";  /* 设置字体 */
+  font-size: 8px;  /* 设置体字大小 */
+  color:#FFFFFF;  /*设置字体颜色*/
+}
+/* ------------------------底部样式设置 ↑------------------------ */
